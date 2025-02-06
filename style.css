@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dragon hunter;
+    font-weight: 500;
+    color: #E8D8C4;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow: hidden;
+}
+
+.screen{
+    height: 100vh;
+    width: 100%;
+    background-color: #561C24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.screen:nth-child(1) h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.screen:nth-child(1) button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #E8D8C4;
+    cursor: pointer;
+    padding: 15px 38px;
+}
+
+.screen:nth-child(1) button:active{
+    scale: 0.96;
+}
+
+.screen:nth-child(2) h1{
+    font-size: 40px;
+}
+
+.elems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.elem{
+    border: 1px solid #E8D8C4;
+    padding: 20px;
+    text-align: center;
+   min-width:200px;
+    height: 210px;
+    transition: all ease 0.3s;
+}
+
+.elem h3{
+    font-size: 25px;
+}
+
+.elem img{
+    height: 140px;
+}
+.elem:hover{
+    background-color: #E8D8C4;
+}
+.elem:hover h3{
+    color: #561C24;
+}
+.elem:active{
+    scale: 0.9;
+}
+
+.time-score{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 30px;
+    border-bottom: 2px solid #E8D8C4;
+  
+    /* background-color: red; */
+}
+
+.playground{
+    height: 91%;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.time-score .time{
+    font-size: 25px;
+}
+
+.time-score .score{
+    font-size: 25px;
+}
+
+.playground img{
+    height: 100px;
+    position: absolute;
+}
+
+.screen:nth-child(3) h5{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #561C24;
+    text-align: center;
+    background-color: #e8d8c4f3;
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    display: none;
+    z-index: 99;
+    /* opacity: 0; */
+}
+
+
